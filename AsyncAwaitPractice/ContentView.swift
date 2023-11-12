@@ -62,7 +62,61 @@ struct ContentView: View {
             Text("asyncClassを作成する関数")
         }
         .padding()
-
+        
+        Button {
+            Task.detached {
+                //  こうもかけるけど、、、
+                let returnValue = await asyncRerutnFunc()
+                await simpleAsyncFunc(string: returnValue)
+                
+                // こうやって、一気にawaitをつけることもできる(まとまった処理に、一括でawaitをつけることができるイメージ)
+                await simpleAsyncFunc(string: asyncRerutnFunc())
+            }
+        } label: {
+            Text("複数のasync関数を、一気に呼ぶ")
+        }
+        .padding()
+        
+        Button {
+            Task.detached {
+                await asyncTwoSeconeds()
+            }
+            
+            Task.detached {
+                await asyncTwoSeconeds2()
+            }
+            
+        } label: {
+            Text("並列実行")
+        }
+        .padding()
+        
+        Button {
+            Task.detached {
+                await asyncTwoSeconeds()
+                await asyncTwoSeconeds2()
+            }
+        } label: {
+            Text("直列実行")
+        }
+        .padding()
+        
+        Button {
+            Task.detached {
+                
+                //  一度、変数にasync関数を閉じ込めて仕舞えば、同じタスク内でも、並列で処理を実行することができる。
+                //  async let バインディングという。
+                async let first: Void = asyncTwoSeconeds()
+                async let second: Void = asyncTwoSeconeds2()
+                
+                await first
+                await second
+            }
+        } label: {
+            Text("並列実行パート2")
+        }
+        .padding()
+        
     }
     
     // どシンプルなasync関数
@@ -81,6 +135,20 @@ struct ContentView: View {
         } else {
             print("エラー関数を、エラーなしで呼び出した。")
         }
+    }
+    
+    func asyncTwoSeconeds() async {
+        try! await Task.sleep(nanoseconds: UInt64(1 * 1_000_000_000))
+        print("１秒経過")
+        try! await Task.sleep(nanoseconds: UInt64(1 * 1_000_000_000))
+        print("２秒経過、\(#function)が完了しました。")
+    }
+    
+    func asyncTwoSeconeds2() async {
+        try! await Task.sleep(nanoseconds: UInt64(1 * 1_000_000_000))
+        print("1秒経過!")
+        try! await Task.sleep(nanoseconds: UInt64(1 * 1_000_000_000))
+        print("2秒経過、\(#function)が完了しました。")
     }
 }
 
