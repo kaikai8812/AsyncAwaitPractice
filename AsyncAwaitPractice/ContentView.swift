@@ -20,10 +20,21 @@ class AsyncClass {
 }
 
 struct ContentView: View {
+    
+    let model = AsyncTestModel()
+    
     var body: some View {
         Button {
             Task.detached {
-                await simpleAsyncFunc(string: "テストです")
+                let nonAsync = model.fetchUser()
+                print(nonAsync)
+                
+                let asyncData = await model.asyncFetchUser()
+                print(asyncData)
+                
+                let data = try await model.asyncfetchUserOrError(isError: true)
+                print(data.name)
+                
             }
         } label: {
             Text("どシンプルasync関数")
