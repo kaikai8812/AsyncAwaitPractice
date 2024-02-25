@@ -26,7 +26,7 @@ class AsyncTestModel {
     
     func asyncFetchUser() async -> UserData {
         return await withCheckedContinuation { continuation in
-            continuation.resume(returning: fetchUser())
+            //            continuation.resume(returning: fetchUser())
         }
     }
     
@@ -45,5 +45,34 @@ class AsyncTestModel {
             conti.resume(with: fetchUserOrError(isError: isError))
         }
     }
+}
+
+class Score {
+    var logs: [Int] = []
+    private(set) var highScore: Int = 0
     
+    func update(with score: Int) {
+        logs.append(score)
+        if score > highScore {
+            highScore = score
+        }
+    }
+}
+
+class SerialScore {
+    
+    private let serialQueue = DispatchQueue(label: "serial-dispatch-queue")
+    var logs: [Int] = []
+    private(set) var highScore: Int = 0
+    
+    func update(with score: Int, completion : @escaping ((Int) -> ())) {
+        serialQueue.async { [weak self] in
+            guard let s = self else { return }
+            self?.logs.append(score)
+            if score > s.highScore {
+                s.highScore = score
+            }
+            completion(s.highScore)
+        }
+    }
 }

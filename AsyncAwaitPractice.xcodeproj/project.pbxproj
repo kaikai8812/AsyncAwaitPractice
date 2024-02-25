@@ -15,6 +15,7 @@
 		E83F039B2AFFC4AA009D3980 /* AsyncAwaitPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F039A2AFFC4AA009D3980 /* AsyncAwaitPracticeUITests.swift */; };
 		E83F039D2AFFC4AA009D3980 /* AsyncAwaitPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F039C2AFFC4AA009D3980 /* AsyncAwaitPracticeUITestsLaunchTests.swift */; };
 		E8A682212B8B2AC400F904ED /* AsyncTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682202B8B2AC400F904ED /* AsyncTestModel.swift */; };
+		E8A682232B8B645200F904ED /* DataRaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682222B8B645200F904ED /* DataRaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E83F039A2AFFC4AA009D3980 /* AsyncAwaitPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitPracticeUITests.swift; sourceTree = "<group>"; };
 		E83F039C2AFFC4AA009D3980 /* AsyncAwaitPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E8A682202B8B2AC400F904ED /* AsyncTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTestModel.swift; sourceTree = "<group>"; };
+		E8A682222B8B645200F904ED /* DataRaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				E83F03832AFFC4AA009D3980 /* Assets.xcassets */,
 				E83F03852AFFC4AA009D3980 /* Preview Content */,
 				E8A682202B8B2AC400F904ED /* AsyncTestModel.swift */,
+				E8A682222B8B645200F904ED /* DataRaceView.swift */,
 			);
 			path = AsyncAwaitPractice;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E83F03822AFFC4A7009D3980 /* ContentView.swift in Sources */,
+				E8A682232B8B645200F904ED /* DataRaceView.swift in Sources */,
 				E83F03802AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift in Sources */,
 				E8A682212B8B2AC400F904ED /* AsyncTestModel.swift in Sources */,
 			);

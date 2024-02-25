@@ -31,9 +31,12 @@ struct ContentView: View {
                 
                 let asyncData = await model.asyncFetchUser()
                 print(asyncData)
-                
-                let data = try await model.asyncfetchUserOrError(isError: true)
-                print(data.name)
+                do {
+                    let data = try await model.asyncfetchUserOrError(isError: false)
+                    print(data.name)
+                } catch {
+                    print("エラーだよ\(error)")
+                }
                 
             }
         } label: {
