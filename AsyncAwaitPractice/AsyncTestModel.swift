@@ -76,3 +76,37 @@ class SerialScore {
         }
     }
 }
+
+actor ActorScore {
+    var logs: [Int] = []
+    private(set) var highScore: Int = 0
+    
+    func update(with score: Int) {
+        logs.append(score)
+        if score > highScore {
+            highScore = score
+        }
+    }
+}
+
+actor HashTest: Hashable {
+    
+    private(set) var num: Int = 0
+    
+    static func == (lhs: HashTest, rhs: HashTest) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    nonisolated func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    //  ここには、nonisolatedはつけることはできない。なぜなら、これがつけれてしまうと、データの競合をactorで防ぎきれなくなってしまうから。
+    func inc() {
+        num += 1
+    }
+    
+    let id: UUID = .init()
+    
+    
+}
