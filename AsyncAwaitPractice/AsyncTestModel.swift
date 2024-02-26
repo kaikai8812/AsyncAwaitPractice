@@ -79,16 +79,37 @@ class SerialScore {
 
 actor ActorScore {
     var logs: [Int] = []
-    private(set) var highScore: Int = 0
+    private(set) var newScore: Int = 0
     
-    func update(with score: Int) {
+    func update(with score: Int) async {
+        newScore = await update(score)
         logs.append(score)
-        if score > highScore {
-            highScore = score
-        }
+    }
+    
+    private func update(_ score: Int) async -> Int {
+        try! await Task.sleep(nanoseconds: UInt64(2 * 1_000_000_000))
+        return score
     }
 }
 
+actor Actor2Score {
+    var localLogs: [Int] = []
+    private(set) var highScore: Int = 0
+    
+    func update(with score: Int) async {
+        // requestHighScoreを呼ぶ順番で結果が変わる
+        localLogs.append(score)
+        highScore = await requestHighScore(with: score)
+    }
+    
+    // サーバーに点数を送るとサーバーが集計した自分の最高得点が得られると想定するメソッド
+    // 実際は2秒まって引数のscoreを返すだけ
+    func requestHighScore(with score: Int) async -> Int {
+        try? await Task.sleep(nanoseconds: 2 * NSEC_PER_SEC)  // 2秒待つ
+        return score
+        
+    }
+}
 actor HashTest: Hashable {
     
     private(set) var num: Int = 0

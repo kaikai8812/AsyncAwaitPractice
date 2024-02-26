@@ -41,16 +41,39 @@ struct DataRaceView: View {
         }
         
         let actorScore = ActorScore()
+        let actor2Store = Actor2Score()
+        
+        Button("testtest") {
+            Task.detached {
+                await actor2Store.update(with: 100)
+                print(await actor2Store.localLogs)
+                print(await actor2Store.highScore)
+            }
+
+            Task.detached {
+                await actor2Store.update(with: 110)
+                print(await actor2Store.localLogs)
+                print(await actor2Store.highScore)
+            }
+        }
         
         Button("ActorScore") {
             Task.detached {
                 await actorScore.update(with:100)
-                await print(actorScore.highScore)
+                print("①")
+                print(await actorScore.logs)
+                print("②")
+                print(await actorScore.newScore)
+                print("③")
             }
             
             Task.detached {
-                await actorScore.update(with:120)
-                await print(actorScore.highScore)
+                await actorScore.update(with:200)
+                print("④")
+                print(await actorScore.logs)
+                print("⑤")
+                print(await actorScore.newScore)
+                print("⑥")
             }
         }
     }
