@@ -8,9 +8,27 @@
 import SwiftUI
 
 struct LinesTestView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    
+    @StateObject
+    var viewModel: LinesTestViewModel
+    
+    init() {
+        _viewModel = .init(wrappedValue: LinesTestViewModel())
     }
+    
+    var text: String = ""
+    
+    var body: some View {
+        Text(viewModel.text)
+        
+        Button("読み込み") {
+            Task.detached {
+                await viewModel.readText
+            }
+        }
+        
+    }
+    
 }
 
 #Preview {
