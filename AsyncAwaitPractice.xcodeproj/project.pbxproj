@@ -21,6 +21,7 @@
 		E8A6822B2B8E436300F904ED /* testText.txt in Resources */ = {isa = PBXBuildFile; fileRef = E8A6822A2B8E436300F904ED /* testText.txt */; };
 		E8A6822D2B8E45CD00F904ED /* LinesTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6822C2B8E45CD00F904ED /* LinesTestViewModel.swift */; };
 		E8A682312B8F989400F904ED /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682302B8F989400F904ED /* SampleView.swift */; };
+		E8A682332B9A22F500F904ED /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682322B9A22F500F904ED /* NotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		E8A6822A2B8E436300F904ED /* testText.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = testText.txt; sourceTree = "<group>"; };
 		E8A6822C2B8E45CD00F904ED /* LinesTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesTestViewModel.swift; sourceTree = "<group>"; };
 		E8A682302B8F989400F904ED /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
+		E8A682322B9A22F500F904ED /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				E8A6822A2B8E436300F904ED /* testText.txt */,
 				E8A6822C2B8E45CD00F904ED /* LinesTestViewModel.swift */,
 				E8A682302B8F989400F904ED /* SampleView.swift */,
+				E8A682322B9A22F500F904ED /* NotificationView.swift */,
 			);
 			path = AsyncAwaitPractice;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				E8A682232B8B645200F904ED /* DataRaceView.swift in Sources */,
 				E83F03802AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift in Sources */,
 				E8A682212B8B2AC400F904ED /* AsyncTestModel.swift in Sources */,
+				E8A682332B9A22F500F904ED /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
