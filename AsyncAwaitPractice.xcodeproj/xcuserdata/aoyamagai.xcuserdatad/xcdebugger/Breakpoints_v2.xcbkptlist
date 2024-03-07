@@ -14,42 +14,10 @@
             filePath = "AsyncAwaitPractice/LinesTestViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "readText()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A4854DEB-1C33-415E-8475-E992B5DA0937 - 4111b40087b35b30"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
-                  moduleName = "AsyncAwaitPractice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "A4854DEB-1C33-415E-8475-E992B5DA0937 - 6815a7e973b0b078"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
-                  moduleName = "AsyncAwaitPractice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "372">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,42 +30,10 @@
             filePath = "AsyncAwaitPractice/LinesTestViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "readText()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6AB41E49-1EA9-431C-99D6-4CCC0CC6A666 - 4111b40087b35b30"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
-                  moduleName = "AsyncAwaitPractice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "6AB41E49-1EA9-431C-99D6-4CCC0CC6A666 - d0e9e4262433d6c4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
-                  moduleName = "AsyncAwaitPractice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "296">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -329,57 +265,10 @@
             filePath = "AsyncAwaitPractice/LinesTestViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "readText()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8D52B75C-0AC6-40BD-971A-763E1665F90D - 4111b40087b35b30"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
-                  moduleName = "AsyncAwaitPractice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "8D52B75C-0AC6-40BD-971A-763E1665F90D - 6815a7e973b0b123"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
-                  moduleName = "AsyncAwaitPractice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "852">
-               </Location>
-               <Location
-                  uuid = "8D52B75C-0AC6-40BD-971A-763E1665F90D - d0e9e4262433d702"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
-                  moduleName = "AsyncAwaitPractice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "556">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

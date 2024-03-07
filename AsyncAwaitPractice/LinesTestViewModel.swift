@@ -25,6 +25,12 @@ class LinesTestViewModel: ObservableObject {
             do {
                 for try await line in url.lines {
                     print(line)
+                    
+                    if line == "dog" {
+                        print("あ！犬を見つけたからループ終了！！")
+                        self.text += "犬みっけ！"
+                        break
+                    }
                     self.text += "\(line)\n"
                 }
             } catch {
