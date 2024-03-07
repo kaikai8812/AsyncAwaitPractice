@@ -22,8 +22,8 @@ struct LinesTestView: View {
         Text(viewModel.text)
         
         Button("読み込み") {
-            Task.detached {
-                await viewModel.readText
+            Task.detached() {
+                await viewModel.readText()
             }
         }
         

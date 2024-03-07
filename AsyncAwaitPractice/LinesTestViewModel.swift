@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class LinesTestViewModel: ObservableObject {
     
     @Published var text: String = ""
