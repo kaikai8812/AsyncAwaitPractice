@@ -141,6 +141,36 @@
                   endingLineNumber = "26"
                   offsetFromSymbolStart = "108">
                </Location>
+               <Location
+                  uuid = "2B59A62F-1ECF-4A70-B32A-F47191578FAA - 6815a7e973b0b03a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "2B59A62F-1ECF-4A70-B32A-F47191578FAA - 6815a7e973b0b03a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "188">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -269,6 +299,38 @@
             endingLineNumber = "39"
             landmarkName = "readText()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8D52B75C-0AC6-40BD-971A-763E1665F90D - 6815a7e973b0b1ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1288">
+               </Location>
+               <Location
+                  uuid = "8D52B75C-0AC6-40BD-971A-763E1665F90D - d0e9e4262433d7cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitPractice.LinesTestViewModel.readText() -&gt; ()"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LinesTestViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "556">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

@@ -9,25 +9,44 @@ import SwiftUI
 
 struct NotificationView: View {
     
-    let center = NotificationCenter.default
-    
-    @State private var text = "初回起動です！なので"
-    @State private var count = 0
+    var viewModel: NotificationViewModel = .init()
     
     var body: some View {
-        Text("\(text)、\(count)回目")
-            .task {
-                let willEnter = center.notifications(named: UIApplication.willEnterForegroundNotification)
-                for await notification in willEnter {
-                    print("🌝:\(notification)")
-                    text = "再起動"
-                    count += 1
-                }
+        
+        Button("監視開始") {
+            Task {
+                await viewModel.appCheckStatus()
             }
+        }
+        
+        Button("監視終了") {
+            Task {
+                viewModel.cleanUp()
+            }
+        }
+        
     }
-    
 }
 
-#Preview {
-    NotificationView()
+class NotificationViewModel {
+    var enterForegroundTask: Task<Void,Never>?
+    
+    func appCheckStatus() async {
+        let notificationCenter = NotificationCenter.default
+        print("監視開始！")
+        enterForegroundTask = Task {
+            let willEnterForeGround =
+            await notificationCenter.notifications(named: UIApplication.willEnterForegroundNotification)
+            
+            for await notification in willEnterForeGround {
+                print("アプリ起動")
+            }
+        }
+    }
+    
+    func cleanUp() {
+        print("監視終了！")
+        enterForegroundTask?.cancel()
+    }
 }
+
