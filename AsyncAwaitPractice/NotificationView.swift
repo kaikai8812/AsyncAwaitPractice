@@ -13,40 +13,51 @@ struct NotificationView: View {
     
     var body: some View {
         
-        Button("監視開始") {
-            Task {
-                await viewModel.appCheckStatus()
+        VStack(spacing: 10) {
+            Button("監視開始") {
+                Task {
+                    await viewModel.appCheckStatus()
+                }
             }
-        }
-        
-        Button("監視終了") {
-            Task {
-                viewModel.cleanUp()
-            }
-        }
-        
-    }
-}
-
-class NotificationViewModel {
-    var enterForegroundTask: Task<Void,Never>?
-    
-    func appCheckStatus() async {
-        let notificationCenter = NotificationCenter.default
-        print("監視開始！")
-        enterForegroundTask = Task {
-            let willEnterForeGround =
-            await notificationCenter.notifications(named: UIApplication.willEnterForegroundNotification)
             
-            for await notification in willEnterForeGround {
-                print("アプリ起動")
+            Button("監視終了") {
+                Task {
+                    viewModel.cleanUp()
+                }
+            }
+            
+            Button("カウント！！") {
+                Task {
+                    let counter = Counter()
+                    
+                    for try await count in counter.countDown(amount: 10) {
+                        print("あと\(count)!")
+                    }
+                }
             }
         }
     }
     
-    func cleanUp() {
-        print("監視終了！")
-        enterForegroundTask?.cancel()
+    class NotificationViewModel {
+        var enterForegroundTask: Task<Void,Never>?
+        
+        func appCheckStatus() async {
+            let notificationCenter = NotificationCenter.default
+            print("監視開始！")
+            enterForegroundTask = Task {
+                let willEnterForeGround =
+                await notificationCenter.notifications(named: UIApplication.willEnterForegroundNotification)
+                
+                for await notification in willEnterForeGround {
+                    print("アプリ起動")
+                }
+            }
+        }
+        
+        func cleanUp() {
+            print("監視終了！")
+            enterForegroundTask?.cancel()
+        }
     }
+    
 }
-

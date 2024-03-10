@@ -22,6 +22,7 @@
 		E8A6822D2B8E45CD00F904ED /* LinesTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6822C2B8E45CD00F904ED /* LinesTestViewModel.swift */; };
 		E8A682312B8F989400F904ED /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682302B8F989400F904ED /* SampleView.swift */; };
 		E8A682332B9A22F500F904ED /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682322B9A22F500F904ED /* NotificationView.swift */; };
+		E8A682352B9DA08700F904ED /* OridinalAsyncSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682342B9DA08700F904ED /* OridinalAsyncSequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		E8A6822C2B8E45CD00F904ED /* LinesTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesTestViewModel.swift; sourceTree = "<group>"; };
 		E8A682302B8F989400F904ED /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		E8A682322B9A22F500F904ED /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		E8A682342B9DA08700F904ED /* OridinalAsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OridinalAsyncSequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				E8A6822C2B8E45CD00F904ED /* LinesTestViewModel.swift */,
 				E8A682302B8F989400F904ED /* SampleView.swift */,
 				E8A682322B9A22F500F904ED /* NotificationView.swift */,
+				E8A682342B9DA08700F904ED /* OridinalAsyncSequence.swift */,
 			);
 			path = AsyncAwaitPractice;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8A682312B8F989400F904ED /* SampleView.swift in Sources */,
+				E8A682352B9DA08700F904ED /* OridinalAsyncSequence.swift in Sources */,
 				E83F03822AFFC4A7009D3980 /* ContentView.swift in Sources */,
 				E8A682272B8CF2AB00F904ED /* MainActorView.swift in Sources */,
 				E8A6822D2B8E45CD00F904ED /* LinesTestViewModel.swift in Sources */,
