@@ -30,9 +30,30 @@ struct NotificationView: View {
                 Task {
                     let counter = Counter()
                     
-                    for try await count in counter.countDown(amount: 10) {
-                        print("あと\(count)!")
+                    //                    for try await count in counter.countDown(amount: 10) {
+                    //                        print("あと\(count)!")
+                    //                    }
+                    
+                    let first = await try counter.countDown(amount: 10).first {
+                        $0 % 2 == 0
                     }
+                    
+                    print("first: \(first)")
+                    
+                    
+                    // 2の倍数だけを取得することができるAsyncSequenceを作成する。
+                    let array = await try counter.countDown(amount: 10)
+                        .filter { count in return count % 2 == 0 }
+                        .map { count in return "\(count) + map変換済み" }
+                    
+                    // 2の倍数だけを取得したarrayを、for await ループで回すことができる。
+                    // メソッドチェーンみたいを利用して、関数型みたいにも書くことができる。
+                    for try await element in array {
+                        print("🌝：\(element)")
+                    }
+                    
+                    
+                    
                 }
             }
         }
