@@ -23,6 +23,8 @@
 		E8A682312B8F989400F904ED /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682302B8F989400F904ED /* SampleView.swift */; };
 		E8A682332B9A22F500F904ED /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682322B9A22F500F904ED /* NotificationView.swift */; };
 		E8A682352B9DA08700F904ED /* OridinalAsyncSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682342B9DA08700F904ED /* OridinalAsyncSequence.swift */; };
+		E8A682372BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682362BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift */; };
+		E8A682392BA448CD00F904ED /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682382BA448CC00F904ED /* LocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		E8A682302B8F989400F904ED /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		E8A682322B9A22F500F904ED /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		E8A682342B9DA08700F904ED /* OridinalAsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OridinalAsyncSequence.swift; sourceTree = "<group>"; };
+		E8A682362BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamPracticeViewModel.swift; sourceTree = "<group>"; };
+		E8A682382BA448CC00F904ED /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		E8A6823A2BA44ED900F904ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +117,7 @@
 		E83F037E2AFFC4A7009D3980 /* AsyncAwaitPractice */ = {
 			isa = PBXGroup;
 			children = (
+				E8A6823A2BA44ED900F904ED /* Info.plist */,
 				E83F037F2AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift */,
 				E83F03812AFFC4A7009D3980 /* ContentView.swift */,
 				E83F03832AFFC4AA009D3980 /* Assets.xcassets */,
@@ -125,6 +131,8 @@
 				E8A682302B8F989400F904ED /* SampleView.swift */,
 				E8A682322B9A22F500F904ED /* NotificationView.swift */,
 				E8A682342B9DA08700F904ED /* OridinalAsyncSequence.swift */,
+				E8A682362BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift */,
+				E8A682382BA448CC00F904ED /* LocationView.swift */,
 			);
 			path = AsyncAwaitPractice;
 			sourceTree = "<group>";
@@ -286,6 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8A682312B8F989400F904ED /* SampleView.swift in Sources */,
+				E8A682392BA448CD00F904ED /* LocationView.swift in Sources */,
+				E8A682372BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift in Sources */,
 				E8A682352B9DA08700F904ED /* OridinalAsyncSequence.swift in Sources */,
 				E83F03822AFFC4A7009D3980 /* ContentView.swift in Sources */,
 				E8A682272B8CF2AB00F904ED /* MainActorView.swift in Sources */,
@@ -461,6 +471,7 @@
 				DEVELOPMENT_TEAM = P24W56LHXT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AsyncAwaitPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +501,7 @@
 				DEVELOPMENT_TEAM = P24W56LHXT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AsyncAwaitPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
