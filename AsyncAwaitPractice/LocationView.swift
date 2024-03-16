@@ -10,10 +10,10 @@ import SwiftUI
 struct LocationView: View {
     
     @StateObject
-    private var locationManager: LocationManager
+    private var locationManager: OridinalLocationManager
     
     init() {
-        self._locationManager = StateObject(wrappedValue: LocationManager())
+        self._locationManager = StateObject(wrappedValue: OridinalLocationManager())
     }
     
     var body: some View {
@@ -31,6 +31,31 @@ struct LocationView: View {
         
         Button("許可とり") {
             locationManager.request()
+        }
+        
+        Button("監視開始(Task保持ver)") {
+            //  taskを、インスタンスで保持するように修正。
+            locationManager.asyncStreamTask =   Task {
+                for await coordinate in locationManager.locations {
+                    print("🌝\(coordinate)")
+                }
+            }
+        }
+        
+        Button("監視開始(Task保持しないver)") {
+            Task {
+                for await coo in locationManager.locations {
+                    print("☀️\(coo)")
+                }
+            }
+        }
+        
+        Button("continuation終了") {
+            locationManager.stopLocation()
+        }
+        
+        Button("task終了") {
+            locationManager.stoptask()
         }
     }
 }

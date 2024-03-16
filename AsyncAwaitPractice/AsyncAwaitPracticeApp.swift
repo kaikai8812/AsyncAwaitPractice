@@ -12,6 +12,7 @@ struct AsyncAwaitPracticeApp: App {
     var body: some Scene {
         WindowGroup {
             LocationView()
+//            AsyncStreamView()
         }
     }
 }

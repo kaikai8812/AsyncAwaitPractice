@@ -25,6 +25,7 @@
 		E8A682352B9DA08700F904ED /* OridinalAsyncSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682342B9DA08700F904ED /* OridinalAsyncSequence.swift */; };
 		E8A682372BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682362BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift */; };
 		E8A682392BA448CD00F904ED /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682382BA448CC00F904ED /* LocationView.swift */; };
+		E8A6823C2BA4558300F904ED /* AsyncStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6823B2BA4558300F904ED /* AsyncStream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		E8A682362BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamPracticeViewModel.swift; sourceTree = "<group>"; };
 		E8A682382BA448CC00F904ED /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		E8A6823A2BA44ED900F904ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E8A6823B2BA4558300F904ED /* AsyncStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				E8A682322B9A22F500F904ED /* NotificationView.swift */,
 				E8A682342B9DA08700F904ED /* OridinalAsyncSequence.swift */,
 				E8A682362BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift */,
+				E8A6823B2BA4558300F904ED /* AsyncStream.swift */,
 				E8A682382BA448CC00F904ED /* LocationView.swift */,
 			);
 			path = AsyncAwaitPractice;
@@ -305,6 +308,7 @@
 				E83F03802AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift in Sources */,
 				E8A682212B8B2AC400F904ED /* AsyncTestModel.swift in Sources */,
 				E8A682332B9A22F500F904ED /* NotificationView.swift in Sources */,
+				E8A6823C2BA4558300F904ED /* AsyncStream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

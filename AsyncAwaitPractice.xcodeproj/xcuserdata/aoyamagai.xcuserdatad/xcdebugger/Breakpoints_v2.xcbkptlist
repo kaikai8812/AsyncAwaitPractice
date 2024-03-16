@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A4854DEB-1C33-415E-8475-E992B5DA0937"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/LinesTestViewModel.swift"
@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6AB41E49-1EA9-431C-99D6-4CCC0CC6A666"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/LinesTestViewModel.swift"
@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2B59A62F-1ECF-4A70-B32A-F47191578FAA"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/LinesTestViewModel.swift"
@@ -178,7 +178,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2CB34500-397D-489B-98C1-A0BF6B238209"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/LinesTestViewModel.swift"
@@ -226,7 +226,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EB86A504-79A6-4AD6-B8B6-17E4CCFF6B56"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/LinesTestViewModel.swift"
@@ -304,7 +304,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8D52B75C-0AC6-40BD-971A-763E1665F90D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/LinesTestViewModel.swift"
@@ -352,7 +352,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "57BAC2F2-00AE-48E8-BDBA-8E55B6E17BA4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/LinesTestView.swift"
@@ -504,31 +504,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C918DE13-A239-4A21-B549-6CA6CF10DFB0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "setup()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "0682C2C6-E398-4D9E-9FE9-D3BB9BEF1481"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "startLocation()"
             landmarkType = "7">
          </BreakpointContent>
@@ -537,14 +521,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "73C35AB7-562D-4270-85FA-A48A3341DB77"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "stopLocation()"
             landmarkType = "7">
             <Locations>
@@ -585,14 +569,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C6CE0FAD-F0A2-4ED8-8D5B-FE2AFEA54D15"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "setup()"
             landmarkType = "7">
          </BreakpointContent>
@@ -601,14 +585,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B84A2BBB-F7FC-44F5-A540-2C397580CFA4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "setup()"
             landmarkType = "7">
          </BreakpointContent>
@@ -617,14 +601,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3ACABD00-6F13-4CB1-9F3F-B69D58AAC6AB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "setup()"
             landmarkType = "7">
          </BreakpointContent>
@@ -633,14 +617,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D3EB7B50-645A-429D-A202-46A24CD3973C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "setup()"
             landmarkType = "7">
          </BreakpointContent>
@@ -649,14 +633,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "444B397E-AC0C-42E3-8317-F4B837261DAB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "request()"
             landmarkType = "7">
          </BreakpointContent>
@@ -665,16 +649,127 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E32084D3-0AC3-4F41-95AF-CF349E5801AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "request()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FCC14DB4-D858-4555-B8B3-9D4819E45846"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "request()"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "locations"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "FCC14DB4-D858-4555-B8B3-9D4819E45846 - c45f1299c9635520"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;.Continuation) -&gt; () in AsyncAwaitPractice.LocationManager.locations.getter : Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "FCC14DB4-D858-4555-B8B3-9D4819E45846 - c4c68b7dae07f428"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;.Continuation) -&gt; () in AsyncAwaitPractice.OridinalLocationManager.locations.getter : Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "FCC14DB4-D858-4555-B8B3-9D4819E45846 - c4c68b7dae07f428"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;.Continuation) -&gt; () in AsyncAwaitPractice.OridinalLocationManager.locations.getter : Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "257250B7-8D28-4953-8B91-BEA01FB98463"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0C83B64-EA90-44D1-AD12-7F3218D4A4FD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC636AA5-AF74-4594-BC44-B6BBB2B8DFAC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/LocationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
