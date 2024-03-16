@@ -42,10 +42,26 @@ struct LocationView: View {
             }
         }
         
-        Button("監視開始(Task保持しないver)") {
+        Button("監視開始(Lazyver)") {
             Task {
-                for await coo in locationManager.locations {
+                for await coo in locationManager.lazyLocations {
                     print("☀️\(coo)")
+                }
+            }
+        }
+        
+        Button("監視開始(Lazyve2)") {
+            Task {
+                for await coo in locationManager.lazyLocations {
+                    print("🔥\(coo)")
+                }
+            }
+        }
+        
+        Button("errorがあり得るstreamを監視") {
+            Task {
+                for try await con in locationManager.locationWithError {
+                    print("👿\(con)")
                 }
             }
         }

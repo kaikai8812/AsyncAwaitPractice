@@ -21,20 +21,37 @@ final class OridinalLocationManager: NSObject, ObservableObject {
         }
     }
     
+    lazy var lazyLocations: AsyncStream<CLLocationCoordinate2D> = {
+        AsyncStream { [weak self] con in
+            self?.continuation = con
+        }
+    }()
+    
+    var locationWithError: AsyncThrowingStream<CLLocationCoordinate2D, Error> {
+        AsyncThrowingStream { [weak self] conti in
+            guard let self = self else { conti.finish(throwing: fatalError("selfがない")) }
+            continuationWithError = conti
+            
+        }
+    }
+    
+    private var continuationWithError: AsyncThrowingStream<CLLocationCoordinate2D, Error>.Continuation? {
+        didSet {
+            continuation?.onTermination = { @Sendable [weak self] _ in
+                self?.locationManager.stopUpdatingLocation()
+            }
+        }
+    }
+    
     private let locationManager = CLLocationManager()
     
     var asyncStreamTask: Task<Void, Never>?
-    
-//    private var test: AsyncStream<String>.Continuation
-    
-    //  continuationが操作されることで、いてレーションを回す際の値が送信される。
+
+        //  continuationが操作されることで、いてレーションを回す際の値が送信される。
     private var continuation: AsyncStream<CLLocationCoordinate2D>.Continuation? {
         // continuation自体の値がセットされた時に、以下の処理がよばれる。
         didSet {
             continuation?.onTermination = { @Sendable [weak self] _ in
-//                 非同期は、アプリ終了などで強制終了させられる可能性が十分ある。
-                // 非同期が終了した場合は、ここが自動でよばれる。
-                // 
                 self?.locationManager.stopUpdatingLocation()
             }
         }
