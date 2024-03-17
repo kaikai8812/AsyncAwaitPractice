@@ -26,6 +26,8 @@
 		E8A682372BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682362BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift */; };
 		E8A682392BA448CD00F904ED /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682382BA448CC00F904ED /* LocationView.swift */; };
 		E8A6823C2BA4558300F904ED /* AsyncStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6823B2BA4558300F904ED /* AsyncStream.swift */; };
+		E8A6823F2BA6DE3700F904ED /* withTaskGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6823E2BA6DE3700F904ED /* withTaskGroupView.swift */; };
+		E8A682412BA6E10E00F904ED /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682402BA6E10E00F904ED /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		E8A682382BA448CC00F904ED /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		E8A6823A2BA44ED900F904ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E8A6823B2BA4558300F904ED /* AsyncStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStream.swift; sourceTree = "<group>"; };
+		E8A6823E2BA6DE3700F904ED /* withTaskGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withTaskGroupView.swift; sourceTree = "<group>"; };
+		E8A682402BA6E10E00F904ED /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 		E83F037E2AFFC4A7009D3980 /* AsyncAwaitPractice */ = {
 			isa = PBXGroup;
 			children = (
+				E8A6823D2BA6DE1200F904ED /* 4-TasK */,
 				E8A6823A2BA44ED900F904ED /* Info.plist */,
 				E83F037F2AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift */,
 				E83F03812AFFC4A7009D3980 /* ContentView.swift */,
@@ -136,6 +141,7 @@
 				E8A682362BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift */,
 				E8A6823B2BA4558300F904ED /* AsyncStream.swift */,
 				E8A682382BA448CC00F904ED /* LocationView.swift */,
+				E8A682402BA6E10E00F904ED /* Util.swift */,
 			);
 			path = AsyncAwaitPractice;
 			sourceTree = "<group>";
@@ -163,6 +169,14 @@
 				E83F039C2AFFC4AA009D3980 /* AsyncAwaitPracticeUITestsLaunchTests.swift */,
 			);
 			path = AsyncAwaitPracticeUITests;
+			sourceTree = "<group>";
+		};
+		E8A6823D2BA6DE1200F904ED /* 4-TasK */ = {
+			isa = PBXGroup;
+			children = (
+				E8A6823E2BA6DE3700F904ED /* withTaskGroupView.swift */,
+			);
+			path = "4-TasK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,12 +317,14 @@
 				E83F03822AFFC4A7009D3980 /* ContentView.swift in Sources */,
 				E8A682272B8CF2AB00F904ED /* MainActorView.swift in Sources */,
 				E8A6822D2B8E45CD00F904ED /* LinesTestViewModel.swift in Sources */,
+				E8A682412BA6E10E00F904ED /* Util.swift in Sources */,
 				E8A682292B8E416200F904ED /* LinesTestView.swift in Sources */,
 				E8A682232B8B645200F904ED /* DataRaceView.swift in Sources */,
 				E83F03802AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift in Sources */,
 				E8A682212B8B2AC400F904ED /* AsyncTestModel.swift in Sources */,
 				E8A682332B9A22F500F904ED /* NotificationView.swift in Sources */,
 				E8A6823C2BA4558300F904ED /* AsyncStream.swift in Sources */,
+				E8A6823F2BA6DE3700F904ED /* withTaskGroupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
