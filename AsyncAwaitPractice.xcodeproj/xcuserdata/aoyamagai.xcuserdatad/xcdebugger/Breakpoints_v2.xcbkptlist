@@ -511,8 +511,8 @@
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "startLocation()"
             landmarkType = "7">
          </BreakpointContent>
@@ -527,8 +527,8 @@
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "stopLocation()"
             landmarkType = "7">
             <Locations>
@@ -575,8 +575,8 @@
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "setup()"
             landmarkType = "7">
          </BreakpointContent>
@@ -591,8 +591,8 @@
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "setup()"
             landmarkType = "7">
          </BreakpointContent>
@@ -607,8 +607,8 @@
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "setup()"
             landmarkType = "7">
          </BreakpointContent>
@@ -623,8 +623,8 @@
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "setup()"
             landmarkType = "7">
          </BreakpointContent>
@@ -639,8 +639,8 @@
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "request()"
             landmarkType = "7">
          </BreakpointContent>
@@ -655,73 +655,10 @@
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "request()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FCC14DB4-D858-4555-B8B3-9D4819E45846"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "locations"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "FCC14DB4-D858-4555-B8B3-9D4819E45846 - c45f1299c9635520"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;.Continuation) -&gt; () in AsyncAwaitPractice.LocationManager.locations.getter : Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;"
-                  moduleName = "AsyncAwaitPractice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "160">
-               </Location>
-               <Location
-                  uuid = "FCC14DB4-D858-4555-B8B3-9D4819E45846 - c4c68b7dae07f428"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;.Continuation) -&gt; () in AsyncAwaitPractice.OridinalLocationManager.locations.getter : Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;"
-                  moduleName = "AsyncAwaitPractice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "160">
-               </Location>
-               <Location
-                  uuid = "FCC14DB4-D858-4555-B8B3-9D4819E45846 - c4c68b7dae07f428"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;.Continuation) -&gt; () in AsyncAwaitPractice.OridinalLocationManager.locations.getter : Swift.AsyncStream&lt;__C.CLLocationCoordinate2D&gt;"
-                  moduleName = "AsyncAwaitPractice"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "144">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -734,8 +671,8 @@
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -750,8 +687,8 @@
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -770,6 +707,86 @@
             endingLineNumber = "40"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "CC636AA5-AF74-4594-BC44-B6BBB2B8DFAC - 35d5f80361b25c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #5 () -&gt; () in AsyncAwaitPractice.LocationView.body.getter : some"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LocationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "CC636AA5-AF74-4594-BC44-B6BBB2B8DFAC - 35d5f80361b25c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #5 () -&gt; () in AsyncAwaitPractice.LocationView.body.getter : some"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/LocationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E52A9719-E388-4236-AF9F-7EE378816860"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "locationWithError"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "E52A9719-E388-4236-AF9F-7EE378816860 - e789868a7d4980ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.AsyncThrowingStream&lt;__C.CLLocationCoordinate2D, Swift.Error&gt;.Continuation) -&gt; () in AsyncAwaitPractice.OridinalLocationManager.locationWithError.getter : Swift.AsyncThrowingStream&lt;__C.CLLocationCoordinate2D, Swift.Error&gt;"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "E52A9719-E388-4236-AF9F-7EE378816860 - e789868a7d49810b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.AsyncThrowingStream&lt;__C.CLLocationCoordinate2D, Swift.Error&gt;.Continuation) -&gt; () in AsyncAwaitPractice.OridinalLocationManager.locationWithError.getter : Swift.AsyncThrowingStream&lt;__C.CLLocationCoordinate2D, Swift.Error&gt;"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "384">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

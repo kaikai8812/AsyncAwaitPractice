@@ -17,7 +17,7 @@ struct LocationView: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Text("緯度：\(locationManager.coordinate.latitude)")
             Text("経度：\(locationManager.coordinate.longitude)")
         }
@@ -64,6 +64,10 @@ struct LocationView: View {
                     print("👿\(con)")
                 }
             }
+        }
+        
+        Button("errorをオンにする。") {
+            locationManager.isError = true
         }
         
         Button("continuation終了") {

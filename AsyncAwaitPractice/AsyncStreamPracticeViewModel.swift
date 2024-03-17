@@ -21,6 +21,8 @@ final class OridinalLocationManager: NSObject, ObservableObject {
         }
     }
     
+    var isError: Bool = false
+    
     lazy var lazyLocations: AsyncStream<CLLocationCoordinate2D> = {
         AsyncStream { [weak self] con in
             self?.continuation = con
@@ -29,15 +31,18 @@ final class OridinalLocationManager: NSObject, ObservableObject {
     
     var locationWithError: AsyncThrowingStream<CLLocationCoordinate2D, Error> {
         AsyncThrowingStream { [weak self] conti in
-            guard let self = self else { conti.finish(throwing: fatalError("selfがない")) }
-            continuationWithError = conti
+            guard let self = self else { return }
+            if self.isError {
+                conti.finish(throwing: fatalError("errorが発生しました。"))
+            }
+            self.continuationWithError = conti
             
         }
     }
     
     private var continuationWithError: AsyncThrowingStream<CLLocationCoordinate2D, Error>.Continuation? {
         didSet {
-            continuation?.onTermination = { @Sendable [weak self] _ in
+            continuationWithError?.onTermination = { @Sendable [weak self] _ in
                 self?.locationManager.stopUpdatingLocation()
             }
         }
@@ -102,5 +107,6 @@ extension OridinalLocationManager: CLLocationManagerDelegate {
         
         // yieldで、値をcontinuationに対して送っている。
         continuation?.yield(lastLocation.coordinate)
+        continuationWithError?.yield(lastLocation.coordinate)
     }
 }
