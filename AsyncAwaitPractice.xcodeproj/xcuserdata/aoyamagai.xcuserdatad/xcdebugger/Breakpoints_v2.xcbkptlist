@@ -697,7 +697,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "CC636AA5-AF74-4594-BC44-B6BBB2B8DFAC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/LocationView.swift"
@@ -745,7 +745,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E52A9719-E388-4236-AF9F-7EE378816860"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AsyncAwaitPractice/AsyncStreamPracticeViewModel.swift"
@@ -787,6 +787,245 @@
                   offsetFromSymbolStart = "384">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C969136E-1CB4-414A-9FE6-49E3823FE6C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "fetchUserData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C969136E-1CB4-414A-9FE6-49E3823FE6C1 - 40295243f8bcf790"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 (inout Swift.TaskGroup&lt;FetchType&gt;) async -&gt; () in AsyncAwaitPractice.withTaskGroupView.fetchUserData() async -&gt; AsyncAwaitPractice.UserInfo"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "536">
+               </Location>
+               <Location
+                  uuid = "C969136E-1CB4-414A-9FE6-49E3823FE6C1 - 40295243f8bcf790"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 (inout Swift.TaskGroup&lt;FetchType&gt;) async -&gt; () in AsyncAwaitPractice.withTaskGroupView.fetchUserData() async -&gt; AsyncAwaitPractice.UserInfo"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97744ABC-1A20-47D8-A30F-12D3FA0CC679"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "fetchUserData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "97744ABC-1A20-47D8-A30F-12D3FA0CC679 - 40295243f8bcf7fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 (inout Swift.TaskGroup&lt;FetchType&gt;) async -&gt; () in AsyncAwaitPractice.withTaskGroupView.fetchUserData() async -&gt; AsyncAwaitPractice.UserInfo"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "1016">
+               </Location>
+               <Location
+                  uuid = "97744ABC-1A20-47D8-A30F-12D3FA0CC679 - 40295243f8bcf7fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 (inout Swift.TaskGroup&lt;FetchType&gt;) async -&gt; () in AsyncAwaitPractice.withTaskGroupView.fetchUserData() async -&gt; AsyncAwaitPractice.UserInfo"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "964">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FA50B08-4DCF-4827-8290-1AF4F310BAF0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "fetchUserData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0FA50B08-4DCF-4827-8290-1AF4F310BAF0 - 417f869f12e635e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 (inout Swift.TaskGroup&lt;FetchType&gt;) async -&gt; () in AsyncAwaitPractice.withTaskGroupView.fetchUserData() async -&gt; AsyncAwaitPractice.UserInfo"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "1348">
+               </Location>
+               <Location
+                  uuid = "0FA50B08-4DCF-4827-8290-1AF4F310BAF0 - 417f869f12e63445"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 (inout Swift.TaskGroup&lt;FetchType&gt;) async -&gt; () in AsyncAwaitPractice.withTaskGroupView.fetchUserData() async -&gt; AsyncAwaitPractice.UserInfo"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "516">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F92D2AB8-4235-4688-8823-367A945E74AC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "fetchUserData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F92D2AB8-4235-4688-8823-367A945E74AC - 40295243f8bcf04b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 (inout Swift.TaskGroup&lt;FetchType&gt;) async -&gt; () in AsyncAwaitPractice.withTaskGroupView.fetchUserData() async -&gt; AsyncAwaitPractice.UserInfo"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "F92D2AB8-4235-4688-8823-367A945E74AC - 417f869f12e63445"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 (inout Swift.TaskGroup&lt;FetchType&gt;) async -&gt; () in AsyncAwaitPractice.withTaskGroupView.fetchUserData() async -&gt; AsyncAwaitPractice.UserInfo"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "1408">
+               </Location>
+               <Location
+                  uuid = "F92D2AB8-4235-4688-8823-367A945E74AC - 417f869f12e634a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 (inout Swift.TaskGroup&lt;FetchType&gt;) async -&gt; () in AsyncAwaitPractice.withTaskGroupView.fetchUserData() async -&gt; AsyncAwaitPractice.UserInfo"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "1000">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "975717BA-1B2E-45CB-8FA7-86AF65FA1F5A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "fetchUserData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "442C326C-E88B-4A0D-AC4E-A67B165016DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "fetchUserData()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
