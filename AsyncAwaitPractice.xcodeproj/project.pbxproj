@@ -28,6 +28,7 @@
 		E8A6823C2BA4558300F904ED /* AsyncStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6823B2BA4558300F904ED /* AsyncStream.swift */; };
 		E8A6823F2BA6DE3700F904ED /* withTaskGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6823E2BA6DE3700F904ED /* withTaskGroupView.swift */; };
 		E8A682412BA6E10E00F904ED /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682402BA6E10E00F904ED /* Util.swift */; };
+		E8A682432BA88FB800F904ED /* ConcurrencyTaskDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682422BA88FB800F904ED /* ConcurrencyTaskDoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		E8A6823B2BA4558300F904ED /* AsyncStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStream.swift; sourceTree = "<group>"; };
 		E8A6823E2BA6DE3700F904ED /* withTaskGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withTaskGroupView.swift; sourceTree = "<group>"; };
 		E8A682402BA6E10E00F904ED /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		E8A682422BA88FB800F904ED /* ConcurrencyTaskDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyTaskDoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				E8A6823E2BA6DE3700F904ED /* withTaskGroupView.swift */,
+				E8A682422BA88FB800F904ED /* ConcurrencyTaskDoView.swift */,
 			);
 			path = "4-TasK";
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				E8A682312B8F989400F904ED /* SampleView.swift in Sources */,
 				E8A682392BA448CD00F904ED /* LocationView.swift in Sources */,
+				E8A682432BA88FB800F904ED /* ConcurrencyTaskDoView.swift in Sources */,
 				E8A682372BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift in Sources */,
 				E8A682352B9DA08700F904ED /* OridinalAsyncSequence.swift in Sources */,
 				E83F03822AFFC4A7009D3980 /* ContentView.swift in Sources */,
