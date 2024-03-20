@@ -30,18 +30,21 @@ struct 動的に非同期なタスクを実行するView: View {
         
         // 非同期で、配列分の子タスクを作成する
         return try await withThrowingTaskGroup(of: (String, String?).self) { group in
+            
+            // 先に、errorが必ず発生する(キャンセルマークがつく子タスクを追加する)
+            group.addTask {
+                return ("error", try await getValueWithError(isError: true))
+            }
+            
             for id in ids {
                 group.addTask {
+                    /// ここでtaskのキャンセルチェックを入れることで、
+                    /// もしすでにエラーが発生し、同グループの子タスクにキャンセルマークがついていたら
+                    /// 子タスクの追加をやめさせることができる。
+                    try Task.checkCancellation()
                     print("子タスク追加が完了したもの:\(id)")
                     return (id, await getvalue(id: id))
                 }
-            }
-            
-            /// ここで追加した子タスクが、エラーを発生させる。
-            /// 同じ子タスクとして追加された、getValueを行う子タスクも、ここで追加した子タスクが
-            /// エラーになることで、エラーが伝番し、タスクが終了されることが確認できる。
-            group.addTask {
-                return ("error", try await getValueWithError(isError: true))
             }
             
             var values: [String: String?] = [:]
@@ -64,7 +67,7 @@ struct 動的に非同期なタスクを実行するView: View {
     }
     
     private func getValueWithError(isError: Bool) async throws -> String {
-        await Util.wait(second: 1)
+//        await Util.wait(second: 1)
         if isError { throw SampleError.TestError("テストエラーが発生しました。") }
         return "成功"
     }
