@@ -21,7 +21,6 @@ struct 動的に非同期なタスクを実行するView: View {
                     print("呼び出し元で、error発生を検知")
                     print(error.localizedDescription)
                 }
-                
             }
         }
     }
@@ -38,9 +37,9 @@ struct 動的に非同期なタスクを実行するView: View {
             
             for id in ids {
                 group.addTask {
-                    /// ここでtaskのキャンセルチェックを入れることで、
-                    /// もしすでにエラーが発生し、同グループの子タスクにキャンセルマークがついていたら
-                    /// 子タスクの追加をやめさせることができる。
+                    // タスクがキャンセルされているか否かを明示的に取得できる。
+                    print(Task.isCancelled ? "キャンセルされてる\(id)": "キャンセルされてない\(id)")
+                    
                     try Task.checkCancellation()
                     print("子タスク追加が完了したもの:\(id)")
                     return (id, await getvalue(id: id))
