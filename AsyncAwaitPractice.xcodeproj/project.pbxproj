@@ -29,6 +29,7 @@
 		E8A6823F2BA6DE3700F904ED /* withTaskGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6823E2BA6DE3700F904ED /* withTaskGroupView.swift */; };
 		E8A682412BA6E10E00F904ED /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682402BA6E10E00F904ED /* Util.swift */; };
 		E8A682432BA88FB800F904ED /* ConcurrencyTaskDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682422BA88FB800F904ED /* ConcurrencyTaskDoView.swift */; };
+		E8A682452BAC8CDC00F904ED /* TimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682442BAC8CDC00F904ED /* TimeTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		E8A6823E2BA6DE3700F904ED /* withTaskGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withTaskGroupView.swift; sourceTree = "<group>"; };
 		E8A682402BA6E10E00F904ED /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		E8A682422BA88FB800F904ED /* ConcurrencyTaskDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyTaskDoView.swift; sourceTree = "<group>"; };
+		E8A682442BAC8CDC00F904ED /* TimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				E8A6823B2BA4558300F904ED /* AsyncStream.swift */,
 				E8A682382BA448CC00F904ED /* LocationView.swift */,
 				E8A682402BA6E10E00F904ED /* Util.swift */,
+				E8A682442BAC8CDC00F904ED /* TimeTracker.swift */,
 			);
 			path = AsyncAwaitPractice;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				E8A682292B8E416200F904ED /* LinesTestView.swift in Sources */,
 				E8A682232B8B645200F904ED /* DataRaceView.swift in Sources */,
 				E83F03802AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift in Sources */,
+				E8A682452BAC8CDC00F904ED /* TimeTracker.swift in Sources */,
 				E8A682212B8B2AC400F904ED /* AsyncTestModel.swift in Sources */,
 				E8A682332B9A22F500F904ED /* NotificationView.swift in Sources */,
 				E8A6823C2BA4558300F904ED /* AsyncStream.swift in Sources */,
