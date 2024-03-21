@@ -885,5 +885,68 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57DBCD53-2D31-4EEF-9146-6488462180B3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitPractice/4-TasK/ConcurrencyTaskDoView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "getvalue(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "57DBCD53-2D31-4EEF-9146-6488462180B3 - 97f6a6c6e46d6f39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for AsyncAwaitPractice.&#x52d5;&#x7684;&#x306b;&#x975e;&#x540c;&#x671f;&#x306a;&#x30bf;&#x30b9;&#x30af;&#x3092;&#x5b9f;&#x884c;&#x3059;&#x308b;View.getvalue(id: Swift.String) async -&gt; Swift.String"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/ConcurrencyTaskDoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "57DBCD53-2D31-4EEF-9146-6488462180B3 - f8cc220524c959ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for AsyncAwaitPractice.&#x52d5;&#x7684;&#x306b;&#x975e;&#x540c;&#x671f;&#x306a;&#x30bf;&#x30b9;&#x30af;&#x3092;&#x5b9f;&#x884c;&#x3059;&#x308b;View.getvalue(id: Swift.String) async -&gt; Swift.String"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/ConcurrencyTaskDoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "57DBCD53-2D31-4EEF-9146-6488462180B3 - bc92c0e14e8ab33f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for AsyncAwaitPractice.&#x52d5;&#x7684;&#x306b;&#x975e;&#x540c;&#x671f;&#x306a;&#x30bf;&#x30b9;&#x30af;&#x3092;&#x5b9f;&#x884c;&#x3059;&#x308b;View.getvalue(id: Swift.String) async -&gt; Swift.String"
+                  moduleName = "AsyncAwaitPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/SwiftUiPractice/AsyncAwaitPractice/AsyncAwaitPractice/4-TasK/ConcurrencyTaskDoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

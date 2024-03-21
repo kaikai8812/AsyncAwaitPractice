@@ -25,38 +25,36 @@ struct 動的に非同期なタスクを実行するView: View {
         }
     }
     
-    private func fetchValues(ids: [String]) async throws -> [String: String?] {
+    private func fetchValues(ids: [String]) async throws -> Void {
         
-        // 非同期で、配列分の子タスクを作成する
-        return try await withThrowingTaskGroup(of: (String, String?).self) { group in
-            
-            // 先に、errorが必ず発生する(キャンセルマークがつく子タスクを追加する)
-            group.addTask {
-                return ("error", try await getValueWithError(isError: true))
-            }
-            
-            for id in ids {
-                group.addTask {
-                    // タスクがキャンセルされているか否かを明示的に取得できる。
-                    print(Task.isCancelled ? "キャンセルされてる\(id)": "キャンセルされてない\(id)")
-                    
-                    try Task.checkCancellation()
-                    print("子タスク追加が完了したもの:\(id)")
-                    return (id, await getvalue(id: id))
+        try await TimeTracker.track {
+            try await withThrowingTaskGroup(of: (String, String?).self) { group in
+                
+                for id in ids {
+                    group.addTask {
+//                        try Task.checkCancellation()
+                        print("子タスク追加が完了したもの:\(id)")
+                        return (id, await getvalue(id: id))
+                    }
                 }
+                
+//                group.addTask {
+//                    return ("error", try await getValueWithError(isError: true))
+//                }
+                
+                var values: [String: String?] = [:]
+                
+//                group.cancelAll()
+                
+                // 子タスクは、並列で実行される。
+                for try await (id, value) in group {
+                    print("データ取得：id: \(id), value: \(String(describing: value))")
+                    values[id] = value
+                }
+                
+                
+                print(values)
             }
-            
-            var values: [String: String?] = [:]
-            
-            // 子タスクは、並列で実行される。
-            for try await (id, value) in group {
-                print("データ取得：id: \(id), value: \(String(describing: value))")
-                values[id] = value
-            }
-            
-            print(values)
-            return values
-            
         }
     }
     
@@ -66,7 +64,7 @@ struct 動的に非同期なタスクを実行するView: View {
     }
     
     private func getValueWithError(isError: Bool) async throws -> String {
-//        await Util.wait(second: 1)
+        await Util.wait(second: 0)
         if isError { throw SampleError.TestError("テストエラーが発生しました。") }
         return "成功"
     }
