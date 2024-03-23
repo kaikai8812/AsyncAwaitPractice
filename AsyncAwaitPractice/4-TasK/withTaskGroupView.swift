@@ -20,6 +20,31 @@ struct withTaskGroupView: View {
                 user = await fetchUserData()
             }
         }
+        
+        Button("get-user") {
+            Task {
+                await TimeTracker.track {
+                    await getUserName()
+                }
+            }
+        }
+        
+        Button("get-age") {
+            Task {
+                await TimeTracker.track {
+                    await getUserAge()
+                }
+            }
+        }
+        
+        Button("全体") {
+            Task {
+                await TimeTracker.track {
+                    await fetchUserData()
+                }
+            }
+        }
+        
     }
     
     private func getUserName() async -> String {
@@ -56,16 +81,7 @@ struct withTaskGroupView: View {
                 print("ageDone!")
                 return FetchType.age(age)
             }
-            
-            /// for await in ループで結果を取得する場合
-//            for await fetchResult in group {
-//                switch fetchResult {
-//                case .name(let n):
-//                    name = n
-//                case .age(let a):
-//                    age = a
-//                }
-//            }
+
             
             /// nextメソッドで、順次情報を取得する場合
             guard let first = await group.next() else {

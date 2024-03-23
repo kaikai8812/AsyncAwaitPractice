@@ -799,8 +799,8 @@
             filePath = "AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "fetchUserData()"
             landmarkType = "7">
             <Locations>
@@ -847,8 +847,8 @@
             filePath = "AsyncAwaitPractice/4-TasK/withTaskGroupView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "fetchUserData()"
             landmarkType = "7">
             <Locations>

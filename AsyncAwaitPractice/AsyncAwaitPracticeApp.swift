@@ -11,7 +11,7 @@ import SwiftUI
 struct AsyncAwaitPracticeApp: App {
     var body: some Scene {
         WindowGroup {
-            動的に非同期なタスクを実行するView()
+            withTaskGroupView()
         }
     }
 }
