@@ -31,6 +31,7 @@
 		E8A682432BA88FB800F904ED /* ConcurrencyTaskDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682422BA88FB800F904ED /* ConcurrencyTaskDoView.swift */; };
 		E8A682452BAC8CDC00F904ED /* TimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682442BAC8CDC00F904ED /* TimeTracker.swift */; };
 		E8A682472BB43B3400F904ED /* DetchedTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682462BB43B3300F904ED /* DetchedTestView.swift */; };
+		E8A6824A2BB484D600F904ED /* SendableCompileErrorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682492BB484D600F904ED /* SendableCompileErrorTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		E8A682422BA88FB800F904ED /* ConcurrencyTaskDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyTaskDoView.swift; sourceTree = "<group>"; };
 		E8A682442BAC8CDC00F904ED /* TimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTracker.swift; sourceTree = "<group>"; };
 		E8A682462BB43B3300F904ED /* DetchedTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetchedTestView.swift; sourceTree = "<group>"; };
+		E8A682492BB484D600F904ED /* SendableCompileErrorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableCompileErrorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		E83F037E2AFFC4A7009D3980 /* AsyncAwaitPractice */ = {
 			isa = PBXGroup;
 			children = (
+				E8A682482BB484C100F904ED /* 5-Actor */,
 				E8A6823D2BA6DE1200F904ED /* 4-TasK */,
 				E8A6823A2BA44ED900F904ED /* Info.plist */,
 				E83F037F2AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift */,
@@ -186,6 +189,14 @@
 				E8A682462BB43B3300F904ED /* DetchedTestView.swift */,
 			);
 			path = "4-TasK";
+			sourceTree = "<group>";
+		};
+		E8A682482BB484C100F904ED /* 5-Actor */ = {
+			isa = PBXGroup;
+			children = (
+				E8A682492BB484D600F904ED /* SendableCompileErrorTest.swift */,
+			);
+			path = "5-Actor";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +332,7 @@
 			files = (
 				E8A682312B8F989400F904ED /* SampleView.swift in Sources */,
 				E8A682392BA448CD00F904ED /* LocationView.swift in Sources */,
+				E8A6824A2BB484D600F904ED /* SendableCompileErrorTest.swift in Sources */,
 				E8A682432BA88FB800F904ED /* ConcurrencyTaskDoView.swift in Sources */,
 				E8A682372BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift in Sources */,
 				E8A682352B9DA08700F904ED /* OridinalAsyncSequence.swift in Sources */,
