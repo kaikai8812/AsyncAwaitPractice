@@ -30,6 +30,7 @@
 		E8A682412BA6E10E00F904ED /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682402BA6E10E00F904ED /* Util.swift */; };
 		E8A682432BA88FB800F904ED /* ConcurrencyTaskDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682422BA88FB800F904ED /* ConcurrencyTaskDoView.swift */; };
 		E8A682452BAC8CDC00F904ED /* TimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682442BAC8CDC00F904ED /* TimeTracker.swift */; };
+		E8A682472BB43B3400F904ED /* DetchedTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A682462BB43B3300F904ED /* DetchedTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		E8A682402BA6E10E00F904ED /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		E8A682422BA88FB800F904ED /* ConcurrencyTaskDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyTaskDoView.swift; sourceTree = "<group>"; };
 		E8A682442BAC8CDC00F904ED /* TimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTracker.swift; sourceTree = "<group>"; };
+		E8A682462BB43B3300F904ED /* DetchedTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetchedTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			children = (
 				E8A6823E2BA6DE3700F904ED /* withTaskGroupView.swift */,
 				E8A682422BA88FB800F904ED /* ConcurrencyTaskDoView.swift */,
+				E8A682462BB43B3300F904ED /* DetchedTestView.swift */,
 			);
 			path = "4-TasK";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				E8A682372BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift in Sources */,
 				E8A682352B9DA08700F904ED /* OridinalAsyncSequence.swift in Sources */,
 				E83F03822AFFC4A7009D3980 /* ContentView.swift in Sources */,
+				E8A682472BB43B3400F904ED /* DetchedTestView.swift in Sources */,
 				E8A682272B8CF2AB00F904ED /* MainActorView.swift in Sources */,
 				E8A6822D2B8E45CD00F904ED /* LinesTestViewModel.swift in Sources */,
 				E8A682412BA6E10E00F904ED /* Util.swift in Sources */,
