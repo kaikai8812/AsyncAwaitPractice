@@ -15,7 +15,7 @@ struct 動的に非同期なタスクを実行するView: View {
         Button("取得") {
             Task {
                 do {
-                    var data = try await fetchValues(ids: ["1", "2", "3", "4"])
+                    var data = try await fetchValuesWithError(ids: ["1", "2", "3", "4"])
                     print("取得できた結果: \(data)")
                 } catch {
                     print("呼び出し元で、error発生を検知")
@@ -25,7 +25,7 @@ struct 動的に非同期なタスクを実行するView: View {
         }
     }
     
-    private func fetchValues(ids: [String]) async throws -> [String: String?] {
+    private func fetchValuesWithError(ids: [String]) async throws -> [String: String?] {
         
         // 非同期で、配列分の子タスクを作成する
         return try await withThrowingTaskGroup(of: (String, String?).self) { group in
@@ -58,6 +58,10 @@ struct 動的に非同期なタスクを実行するView: View {
             return values
             
         }
+    }
+    
+    private func fetchValue() {
+        
     }
     
     private func getvalue(id: String) async -> String {
