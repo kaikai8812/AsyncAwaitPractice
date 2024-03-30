@@ -34,3 +34,41 @@ func some2Func(actor: SendableActor, string: String) async {
     let result = await actor.returnSendableString(string: string)
     print(result)
 }
+
+struct SendableTest: Sendable {
+    var stringValue: String
+    var nsStringValue: NSMutableString
+}
+
+struct GenericSendableTest<T> {
+    var value: T
+    
+    func sample() -> T {
+        return value
+    }
+}
+
+///Genericを使用しているものをSendableに準拠させるためには、
+///メンバーがSendableに準拠していることを表さなければならない。
+extension GenericSendableTest: Sendable where T: Sendable {}
+
+final class SendableClass: Sendable {
+    let value = "aaa"
+    
+    ///  mutableなプロパティに対しては、警告が出る。
+    var mutableValue: String
+    
+    init(mutableValue: String) {
+        self.mutableValue = mutableValue
+    }
+    
+    // これも、実質mutableなプロパティだと思うのだが、警告がでない🤔
+    var computedValue: String {
+        mutableValue + "ちゃむ"
+    }
+    
+    func hoge(value: String) {
+        mutableValue = value
+        print(mutableValue)
+    }
+}
