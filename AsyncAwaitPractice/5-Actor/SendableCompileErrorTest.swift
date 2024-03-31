@@ -72,3 +72,28 @@ final class SendableClass: Sendable {
         print(mutableValue)
     }
 }
+
+func nestedFunc() {
+    let state: Int = 42
+    
+    /// ① stateは、let で定義されているので、@Sendable属性がついているclosure内でも使用することができる。
+    let closure: ( @Sendable (Int) -> Void ) = {
+        new in print(state)
+    }
+    
+    closure(1)
+    
+    class NestA {
+        var nsString: NSString = "apple"
+    }
+    
+    let nestA = NestA()
+    
+    @Sendable
+    func updateLocalState(number: Int) {
+        var nest = NestA()
+        
+        // NestAクラスは、Sendableに準拠していないので、ワーニングが出るような気がするが、出ない？
+        nest.nsString = "111"
+    }
+}
