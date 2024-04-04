@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E80F70E82BBEF3540019A11B /* RefreshableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F70E72BBEF3540019A11B /* RefreshableView.swift */; };
 		E83F03802AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F037F2AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift */; };
 		E83F03822AFFC4A7009D3980 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F03812AFFC4A7009D3980 /* ContentView.swift */; };
 		E83F03842AFFC4AA009D3980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83F03832AFFC4AA009D3980 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E80F70E72BBEF3540019A11B /* RefreshableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableView.swift; sourceTree = "<group>"; };
 		E83F037C2AFFC4A7009D3980 /* AsyncAwaitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAwaitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83F037F2AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitPracticeApp.swift; sourceTree = "<group>"; };
 		E83F03812AFFC4A7009D3980 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				E8A682382BA448CC00F904ED /* LocationView.swift */,
 				E8A682402BA6E10E00F904ED /* Util.swift */,
 				E8A682442BAC8CDC00F904ED /* TimeTracker.swift */,
+				E80F70E72BBEF3540019A11B /* RefreshableView.swift */,
 			);
 			path = AsyncAwaitPractice;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				E8A682212B8B2AC400F904ED /* AsyncTestModel.swift in Sources */,
 				E8A682332B9A22F500F904ED /* NotificationView.swift in Sources */,
 				E8A6823C2BA4558300F904ED /* AsyncStream.swift in Sources */,
+				E80F70E82BBEF3540019A11B /* RefreshableView.swift in Sources */,
 				E8A6823F2BA6DE3700F904ED /* withTaskGroupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
