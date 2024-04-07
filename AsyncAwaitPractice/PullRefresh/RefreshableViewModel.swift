@@ -26,9 +26,9 @@ final class RefreshableViewModel: ObservableObject {
     init() {
         self.uiState = RefreshableUiState()
         
-        Task {
-            await refreshRandomNumbers()
-        }
+        //        Task {
+        //            await refreshRandomNumbers()
+        //        }
     }
     
     func send(_ action: RefreshableAction) async {
@@ -43,7 +43,16 @@ private extension RefreshableViewModel {
     func refreshRandomNumbers() async {
         uiState.isLoading = true
         
-        try? await Task.sleep(for: .seconds(2))
+        //        try? await Task.sleep(for: .seconds(2))
+        
+        /// 同期的に以下の重い処理が走った場合は、メインスレッドが以下の処理に
+        /// 使用されるため、画面がカクつく。
+        do {
+            for i in 0..<100_000 {
+                print(i)
+            }
+            print("メインスレッド？ → \(Thread.isMainThread)")
+        }
         
         var randomNumbers: [Int] = []
         
