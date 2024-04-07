@@ -16,6 +16,10 @@ struct RefreshableView: View {
             randamNumbers: viewModel.uiState.randamNumbers,
             isLoading: viewModel.uiState.isLoading
         )
+        /// Taskにすることで、Viewのライフサイクルによった状態でタスクキャンセルが走る
+        .task {
+            await viewModel.send(.task)
+        }
         .refreshable {
             await viewModel.send(.refreshable)
         }
@@ -25,7 +29,6 @@ struct RefreshableView: View {
     init() {
         self._viewModel = StateObject(wrappedValue: RefreshableViewModel())
     }
-    
 }
 
 #Preview {

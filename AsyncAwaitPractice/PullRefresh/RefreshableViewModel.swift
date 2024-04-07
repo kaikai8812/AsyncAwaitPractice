@@ -15,6 +15,7 @@ struct RefreshableUiState {
 }
 
 enum RefreshableAction {
+    case task
     case refreshable
 }
 
@@ -26,14 +27,17 @@ final class RefreshableViewModel: ObservableObject {
     init() {
         self.uiState = RefreshableUiState()
         
-        //        Task {
-        //            await refreshRandomNumbers()
-        //        }
+        /// 問題点：現状、データの初期化を、viewModelのinit時に実行している。
+        /// これでは、非同期処理が投げっぱなしになっており、
+        /// 非同期処理のキャンセルなどができない。
+        Task {
+            await refreshRandomNumbers()
+        }
     }
     
     func send(_ action: RefreshableAction) async {
         switch action {
-        case .refreshable:
+        case .refreshable, .task:
             await refreshRandomNumbers()
         }
     }
@@ -43,29 +47,32 @@ private extension RefreshableViewModel {
     func refreshRandomNumbers() async {
         uiState.isLoading = true
         
-        print("直下の場合：　メインスレッドか否か → \(Thread.isMainThread)")
+        do {
+            uiState.randamNumbers = try await getRandamNumbers()
+        } catch is CancellationError {
+            print("タスクがキャンセルされました。")
+        } catch {
+            print("キャンセラレーションエラー以外のエラー")
+        }
         
-        uiState.randamNumbers = await getRandamNumbers()
         uiState.isLoading = false
     }
     
-    /// 重い同期処理を発生させる部分を、nonisolatedメソッドでmainActorでない別actorに
-    /// 逃がしてあげることで、メインスレッドがブロックされることがなくなり、
-    /// カクツキを抑えることができる。
     nonisolated
-    func getRandamNumbers() async -> [Int] {
-        do {
-            for i in 0..<100_000 {
-                print(i)
-            }
-            print("退避させた場合：　メインスレッドか否か → \(Thread.isMainThread)")
-        }
+    func getRandamNumbers() async throws -> [Int] {
+        
+        try await Task.sleep(for: .seconds(2))
         
         var randomNumbers: [Int] = []
-        
         for _ in 0..<10 {
             randomNumbers.append(.random(in: 0..<10))
         }
+        
+//        if randomNumbers.contains(where: { num in
+//            num == 4
+//        }) {
+//            throw CancellationError()
+//        }
         
         return randomNumbers
     }
