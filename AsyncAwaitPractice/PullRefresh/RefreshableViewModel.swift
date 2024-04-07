@@ -43,15 +43,22 @@ private extension RefreshableViewModel {
     func refreshRandomNumbers() async {
         uiState.isLoading = true
         
-        //        try? await Task.sleep(for: .seconds(2))
+        print("直下の場合：　メインスレッドか否か → \(Thread.isMainThread)")
         
-        /// 同期的に以下の重い処理が走った場合は、メインスレッドが以下の処理に
-        /// 使用されるため、画面がカクつく。
+        uiState.randamNumbers = await getRandamNumbers()
+        uiState.isLoading = false
+    }
+    
+    /// 重い同期処理を発生させる部分を、nonisolatedメソッドでmainActorでない別actorに
+    /// 逃がしてあげることで、メインスレッドがブロックされることがなくなり、
+    /// カクツキを抑えることができる。
+    nonisolated
+    func getRandamNumbers() async -> [Int] {
         do {
             for i in 0..<100_000 {
                 print(i)
             }
-            print("メインスレッド？ → \(Thread.isMainThread)")
+            print("退避させた場合：　メインスレッドか否か → \(Thread.isMainThread)")
         }
         
         var randomNumbers: [Int] = []
@@ -60,7 +67,6 @@ private extension RefreshableViewModel {
             randomNumbers.append(.random(in: 0..<10))
         }
         
-        uiState.randamNumbers = randomNumbers
-        uiState.isLoading = false
+        return randomNumbers
     }
 }
