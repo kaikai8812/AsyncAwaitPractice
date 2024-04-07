@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E80F70E82BBEF3540019A11B /* RefreshableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F70E72BBEF3540019A11B /* RefreshableView.swift */; };
+		E80F70EB2BBEF6540019A11B /* RefreshableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F70EA2BBEF6540019A11B /* RefreshableListView.swift */; };
+		E80F70ED2BBEF6A70019A11B /* RefreshableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F70EC2BBEF6A70019A11B /* RefreshableViewModel.swift */; };
 		E83F03802AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F037F2AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift */; };
 		E83F03822AFFC4A7009D3980 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83F03812AFFC4A7009D3980 /* ContentView.swift */; };
 		E83F03842AFFC4AA009D3980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83F03832AFFC4AA009D3980 /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 
 /* Begin PBXFileReference section */
 		E80F70E72BBEF3540019A11B /* RefreshableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableView.swift; sourceTree = "<group>"; };
+		E80F70EA2BBEF6540019A11B /* RefreshableListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableListView.swift; sourceTree = "<group>"; };
+		E80F70EC2BBEF6A70019A11B /* RefreshableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableViewModel.swift; sourceTree = "<group>"; };
 		E83F037C2AFFC4A7009D3980 /* AsyncAwaitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAwaitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83F037F2AFFC4A7009D3980 /* AsyncAwaitPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitPracticeApp.swift; sourceTree = "<group>"; };
 		E83F03812AFFC4A7009D3980 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E80F70E92BBEF4790019A11B /* PullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				E80F70E72BBEF3540019A11B /* RefreshableView.swift */,
+				E80F70EA2BBEF6540019A11B /* RefreshableListView.swift */,
+				E80F70EC2BBEF6A70019A11B /* RefreshableViewModel.swift */,
+			);
+			path = PullRefresh;
+			sourceTree = "<group>";
+		};
 		E83F03732AFFC4A7009D3980 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +147,7 @@
 		E83F037E2AFFC4A7009D3980 /* AsyncAwaitPractice */ = {
 			isa = PBXGroup;
 			children = (
+				E80F70E92BBEF4790019A11B /* PullRefresh */,
 				E8A682482BB484C100F904ED /* 5-Actor */,
 				E8A6823D2BA6DE1200F904ED /* 4-TasK */,
 				E8A6823A2BA44ED900F904ED /* Info.plist */,
@@ -154,7 +169,6 @@
 				E8A682382BA448CC00F904ED /* LocationView.swift */,
 				E8A682402BA6E10E00F904ED /* Util.swift */,
 				E8A682442BAC8CDC00F904ED /* TimeTracker.swift */,
-				E80F70E72BBEF3540019A11B /* RefreshableView.swift */,
 			);
 			path = AsyncAwaitPractice;
 			sourceTree = "<group>";
@@ -336,8 +350,10 @@
 				E8A682312B8F989400F904ED /* SampleView.swift in Sources */,
 				E8A682392BA448CD00F904ED /* LocationView.swift in Sources */,
 				E8A6824A2BB484D600F904ED /* SendableCompileErrorTest.swift in Sources */,
+				E80F70EB2BBEF6540019A11B /* RefreshableListView.swift in Sources */,
 				E8A682432BA88FB800F904ED /* ConcurrencyTaskDoView.swift in Sources */,
 				E8A682372BA1FC3500F904ED /* AsyncStreamPracticeViewModel.swift in Sources */,
+				E80F70ED2BBEF6A70019A11B /* RefreshableViewModel.swift in Sources */,
 				E8A682352B9DA08700F904ED /* OridinalAsyncSequence.swift in Sources */,
 				E83F03822AFFC4A7009D3980 /* ContentView.swift in Sources */,
 				E8A682472BB43B3400F904ED /* DetchedTestView.swift in Sources */,
