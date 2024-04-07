@@ -17,7 +17,7 @@ struct RefreshableView: View {
             isLoading: viewModel.uiState.isLoading
         )
         .refreshable {
-            viewModel.send(.refreshable)
+            await viewModel.send(.refreshable)
         }
     }
     

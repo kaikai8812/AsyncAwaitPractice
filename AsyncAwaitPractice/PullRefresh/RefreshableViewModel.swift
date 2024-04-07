@@ -31,12 +31,10 @@ final class RefreshableViewModel: ObservableObject {
         }
     }
     
-    func send(_ action: RefreshableAction) {
+    func send(_ action: RefreshableAction) async {
         switch action {
         case .refreshable:
-            Task {
-                await refreshRandomNumbers()
-            }
+            await refreshRandomNumbers()
         }
     }
 }
